@@ -39,6 +39,16 @@
     animation: clouds-animation 20s infinite linear;
 }
 
+.button{
+    width: 200px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @keyframes pipe-animation{
     from{
         right: -80px;
