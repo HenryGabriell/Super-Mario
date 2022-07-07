@@ -12,6 +12,8 @@ const jump = () => {
 
 const loop = setInterval(() => {
 
+    console.log('loop')
+
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     
@@ -20,6 +22,15 @@ const loop = setInterval(() => {
     if(pipePosition <= 120 && pipePosition >0 && marioPosition <80){
         pipe.style.animation = 'none';
         pipe.style.left= `${pipePosition}px`;
+
+        mario.style.animation = 'none';
+        mario.style.bottom= `${marioPosition}px`;
+
+        mario.src= './imagens/game-over.png';
+        mario.style.width= '75px'
+        mario.style.marginleft= '50px'
+
+        clearInterval(loop);
     }
 
 }, 10)
