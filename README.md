@@ -11,5 +11,7 @@ Conteudo usado como base do canal 'Manual do Dev', no YouTube
 <hr>
 open source 👍
 <br>
-
+OBS: Por hora, não é responsivo e não pega em smartphones.
+<br>
+<br>
 Da uma jogada:  https://henrygabriell.github.io/Super-Mario/
